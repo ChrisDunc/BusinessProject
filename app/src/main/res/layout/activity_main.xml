@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.clduncan.businessproject.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        android:orientation="vertical"
+        android:weightSum="1"
+        app:layout_constraintLeft_toRightOf="parent"
+        tools:layout_editor_absoluteY="8dp"
+        android:layout_marginLeft="-364dp">
+
+        <ImageView
+            android:id="@+id/Logo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/TacoBellLogo"/>
+
+        <TextView
+            android:id="@+id/greeting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Taco Bell - Live Más!"
+            android:textColor="#36399a"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_below="@+id/Logo"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="30dp" />
+        <TextView
+            android:id="@+id/find"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Find Us:"
+            android:textColor="#36399a"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_below="@id/greeting"
+            android:layout_marginTop="30dp"/>
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2323 Versailles Rd, Lexington, KY 40504"
+            android:textColor="#36399a"
+            android:textSize="16sp"
+            android:layout_below="@id/find" />
+
+        <TextView
+            android:id="@+id/site"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Our Menu: www.tacobell.com/food"
+            android:textColor="#36399a"
+            android:textSize="16sp"
+            android:layout_below="@id/address" />
+        <TextView
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Call Us: (859) 254-0436"
+            android:textColor="#36399a"
+            android:textSize="16sp"
+            android:layout_below="@id/site" />
+
+        <TextView
+            android:id="@+id/Hours"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hours of Operation:"
+            android:textColor="#36399a"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_below="@id/phone"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/reg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mon-Fri: 7AM - 2AM"
+            android:textColor="#36399a"
+            android:textSize="16sp"
+            android:layout_below="@id/Hours" />
+
+        <TextView
+            android:id="@+id/weekend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sat-Sun: 7AM - 3AM"
+            android:textColor="#36399a"
+            android:textSize="16sp"
+            android:layout_below="@id/reg" />
+
+        <TextView
+            android:id="@+id/connect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Stay Connected:"
+            android:textColor="#36399a"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_below="@id/weekend"
+            android:layout_marginTop="20dp"/>
+
+        <ImageView
+            android:id="@+id/facebook"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/facebook"
+            android:layout_below="@+id/connect"
+            android:layout_marginTop="2dp"/>
+
+        <ImageView
+            android:id="@+id/twitter"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/twitter"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/connect"
+            android:layout_toRightOf="@+id/facebook" />
+
+        <ImageView
+            android:id="@+id/insta"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/instagram"
+            android:layout_marginLeft="10dp"
+            android:layout_alignTop="@+id/facebook"
+            android:layout_toRightOf="@+id/twitter"
+            android:layout_toEndOf="@+id/twitter" />
+
+
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
